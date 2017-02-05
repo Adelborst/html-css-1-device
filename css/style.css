@@ -39,9 +39,202 @@ body {
     font-size: 15px;
     line-height: 2;
     color: #444444;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2 {
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-size: 47px;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+.page-header {
+    margin-top: 40px;
+    padding-top: 50px;
+}
+
+.page-header-top {    
+    background-color: #ffe27f;
+}
+
+.main-nav-left {
+    float: left;
+    width: 500px;
+}
+
+.main-nav-right {
+    float: right;
+    width: 500px;
+}
+
+.main-nav .nav-row {
+    margin-bottom: 45px;
+}
+
+.nav-account {
+    float: left;
+    width: 260px;
+}
+
+.nav-shop {
+    float: right;
+    width: 220px;
+}
+
+.nav-service {
+    float: left;
+    width: 300px;
+}
+
+.nav-contacts {
+    float: right;
+    width: 140px;
+}
+
+.product-left {
+    float: left;
+    width: 500px;
+}
+
+.product-right {
+    float: right;
+    width: 500px;
+}
+
+.product-description h2 {
+    margin-bottom: 35px;
+}
+
+.product-description p {
+    margin-bottom: 60px;
+}
+
+.product-description a {
+    display: block;
+    margin-bottom: 65px;
+}
+
+.product-features b {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.index-jumbotron {
+    margin-bottom: 95px;
+}
+
+.index-product-categories {
+    margin-bottom: 90px;
+}
+
+.index-product-categories li {
+    display: inline-block;
+}
+
+.index-conditions {
+    min-height: 290px;
+    background-color: #e6e6e6;
+}
+
+.index-conditions-nav {
+    float: left;
+    width: 280px;
+}
+
+.index-conditions-content {
+    float: right;
+    width: 460px;
+}
+
+.index-conditions-content h2 {
+    margin-bottom: 40px;
+}
+
+.index-about-us {
+    padding-top: 95px;
+    padding-bottom: 90px;
+}
+
+.media-library {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 145px;
+}
+
+.media-library li {
+    display: inline-block;
+}
+
+.index-about-us-left {
+    float: left;
+    width: 460px;
+}
+
+.index-about-us-right {
+    float: right;
+    width: 560px;
+}
+
+.index-about-us h3 {
+    margin-bottom: 45px;
+}
+
+.index-about-us p {
+    margin-bottom: 40px;
+}
+
+.index-about-us .shipping-company-list {
+    margin-top: 80px;
+}
+
+.index-about-us .map {
+    margin-bottom: 80px;
+}
+
+.page-footer {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: #444444;
+    color: #ffffff;
+}
+
+.page-footer .footer-left {
+    float: left;
+    width: 260px;
+    margin-right: 160px;
+}
+
+.page-footer .footer-center {
+    float: left;
+    width: 440px;
+}
+
+.page-footer .footer-right {
+    float: right;
+    width: 300px;
+}
+
+.footer-nav-list, .social-list, .child-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-nav-list li, .social-list li, .child-nav li {
+    display: inline-block;
 }
