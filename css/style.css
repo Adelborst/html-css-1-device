@@ -93,7 +93,7 @@ h1, h2 {
 
 .nav-shop {
     float: right;
-    width: 220px;
+    width: 200px;
 }
 
 .nav-service {
@@ -204,6 +204,89 @@ h1, h2 {
 
 .index-about-us .map {
     margin-bottom: 80px;
+}
+
+.catalog-left {
+    float: left;
+    width: 32.5%;
+}
+
+.catalog-right {
+    float: right;
+    width: 67.5%;
+}
+
+.catalog-header {
+    min-height: 70px;
+}
+
+.catalog-header .catalog-left {
+    background-color: #dddddd;
+}
+
+.catalog-body .catalog-left {
+    background-color: #f0f0f0;
+}
+
+.catalog-header .catalog-right {
+    background-color: #ebebeb;
+}
+
+.catalog-body .catalog-right {
+    /*padding-top: 70px;
+    padding-bottom: 75px;
+    padding-left: 75px;*/
+}
+
+
+.product-item{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.product-item:nth-child(2n){
+    margin-right: 0;
+}
+
+.product-image {
+    margin: 0;
+    padding: 0;
+}
+
+.product-item-title {
+    float: left;
+    width: 260px;
+    font-size: 18px;
+}
+
+.product-item-price {
+    float: right;
+    width: 80px;
+}
+
+.paginator {
+    background-color: #ebebeb;
+    color: #000000;
+    padding: 25px 30px;
+}
+
+.paginator .prev{
+    float: left; 
+}
+
+.paginator .next{
+    float: right;
+}
+
+.paginator .list {
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.paginator li {
+    display: inline-block;
 }
 
 .page-footer {
