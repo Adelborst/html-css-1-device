@@ -103,69 +103,67 @@
                 <div class="catalog-body clearfix">
                     <div class="catalog-left narrower">
                         <form class="filter">
-                            <fieldset class="filter-form-group">
-                                <legend>Стоимость</legend>
-                                <input type="range" name="price" class="price-control">
-                            </fieldset>
-                            <fieldset class="filter-form-group">
-                                <legend>Цвет</legend>
+                            <div class="filter-form-group">
+                                <p class="filter-option">Стоимость</p>
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle toggle-min"><span>от 0</span></div>
+                                    <div class="toggle toggle-max"><span>до 5000</span></div>
+                                </div>
+                            </div>
+                            <div class="filter-form-group">
+                                <p class="filter-option">Цвет</p>
                                 <ul class="color-options">
-                                    <li><label><input type="checkbox" name="color" value="black" checked> Чёрный</label></li>
-                                    <li><label><input type="checkbox" name="color" value="white"> Белый</label></li>
-                                    <li><label><input type="checkbox" name="color" value="blue" checked> Синий</label></li>
-                                    <li><label><input type="checkbox" name="color" value="red" checked> Красный</label></li>
-                                    <li><label><input type="checkbox" name="color" value="pink"> Розовый</label></li>
+                                    <li><label class="color-checkbox"><input type="checkbox" name="color" value="black" checked><span class="checkbox-indicator"></span> Чёрный</label></li>
+                                    <li><label class="color-checkbox"><input type="checkbox" name="color" value="white"><span class="checkbox-indicator"></span> Белый</label></li>
+                                    <li><label class="color-checkbox"><input type="checkbox" name="color" value="blue" checked><span class="checkbox-indicator"></span> Синий</label></li>
+                                    <li><label class="color-checkbox"><input type="checkbox" name="color" value="red" checked><span class="checkbox-indicator"></span> Красный</label></li>
+                                    <li><label class="color-checkbox"><input type="checkbox" name="color" value="pink"><span class="checkbox-indicator"></span> Розовый</label></li>
                                 </ul>
-                            </fieldset>
-                            <fieldset class="filter-form-group">
-                                <legend>Bluetooth</legend>
+                            </div>
+                            <div class="filter-form-group">
+                                <p class="filter-option">Bluetooth</p>
                                 <ul class="bluetooth-options">
-                                    <li><label><input type="radio" name="bluetooth" value="1" checked> Есть</label></li>
-                                    <li><label><input type="radio" name="bluetooth" value="0"> Нет</label></li>
+                                    <li><label class="bluetooth-checkbox"><input type="radio" name="bluetooth" value="1" checked><span class="checkbox-indicator"></span> Есть</label></li>
+                                    <li><label class="bluetooth-checkbox"><input type="radio" name="bluetooth" value="0"><span class="checkbox-indicator"></span> Нет</label></li>
                                 </ul>
-                            </fieldset>
+                            </div>
                             <button type="submit" class="btn">Показать</button>
                         </form>
                     </div>
                     <div class="catalog-right">
-                        <!--<div class="product-list">
-                        <article class="product-item">
-                            <a href="#">
-                                <figure class="product-image"><img src="img/item-1.jpg" alt="" width="360" height="380"></figure>
+                        <div class="product-list">
+                            <div class="product-item">
+                                <div class="product-image"><img src="img/item-1.jpg" alt="" width="360" height="380"></div>
                                 <h2 class="product-item-title">Любительская селфи-палка</h2>
                                 <span class="product-item-price">500 руб.</span>
-                            </a>
-                        </article>
-                        <article class="product-item">
-                            <a href="#">
-                                <figure class="product-image"><img src="img/item-2.jpg" alt="" width="360" height="380"></figure>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-image"><img src="img/item-2.jpg" alt="" width="360" height="380"></div>
                                 <h2 class="product-item-title">Профессиональная селфи-палка</h2>
                                 <span class="product-item-price">1500 руб.</span>
-                            </a>
-                        </article>
-                        <article class="product-item">
-                            <a href="#">
-                                <figure class="product-image"><img src="img/item-3.jpg" alt="" width="360" height="380"></figure>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-image"><img src="img/item-3.jpg" alt="" width="360" height="380"></div>
                                 <h2 class="product-item-title">Непотопляемая селфи-палка</h2>
                                 <span class="product-item-price">2500 руб.</span>
-                            </a>
-                        </article>
-                        <article class="product-item">
-                            <a href="#">
-                                <figure class="product-image"><img src="img/item-4.jpg" alt="" width="360" height="380"></figure>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-image"><img src="img/item-4.jpg" alt="" width="360" height="380"></div>
                                 <h2 class="product-item-title">Селфи-палка «Следуй за мной»</h2>
                                 <span class="product-item-price">4900 руб.</span>
-                            </a>
-                        </article>
-                    </div>-->
+                            </div>
+                        </div>
                         <nav class="paginator clearfix">
                             <a href="#" class="prev">Назад</a>
+                            <a href="#" class="next">Вперед</a>
                             <ul class="list">
                                 <li class="active"><a>1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#">3</a></li>
                             </ul>
-                            <a href="#" class="next">Вперед</a>
                         </nav>
                     </div>
                 </div>

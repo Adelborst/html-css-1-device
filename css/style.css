@@ -433,12 +433,6 @@ a {
     padding-right: 60px;
 }
 
-.product-image {
-    position: absolute;
-    top: -110px;
-    left: 90px;
-}
-
 .product-right {
     float: right;
     width: 500px;
@@ -905,15 +899,188 @@ a {
     background-color: #ebebeb;
 }
 
-.catalog-body .catalog-right {
-    /*padding-top: 70px;
-    padding-bottom: 75px;
-    padding-left: 75px;*/
+.range-controls {
+  position: relative;
+  height: 40px;
+  padding-top: 12px;
 }
 
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 120px;
+  height: 2px;
+  background: #7eae29;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 6px;
+  left: -1px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background: #eee;
+}
+
+.range-controls .toggle-max {
+  left: 111px;
+}
+
+.toggle-max, .toggle-min {
+  position: relative;
+}
+
+.toggle:active {
+  border-color: white;
+  background-color: #7eae29;
+  box-shadow: 0 5px 5px -3px black;
+}
+
+.toggle span {
+    position: absolute;
+    top: 15px;
+    width: 60px;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 400;
+    color: #cecece;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog-body .catalog-left,
+.catalog-body .catalog-right{
+    padding-top: 70px;
+}
+
+.filter-form-group {
+    border-top: 2px solid black;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+.filter-option {
+    margin: 0;
+    padding: 0;    
+    font-size: 18px;
+    line-height: normal;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+
+.toggle-max span {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.filter-form-group label {
+  margin-bottom: 10px;
+}
+
+.color-options input[type="checkbox"],
+.bluetooth-options input[type="radio"] {
+  display: none;
+}
+
+.color-options label,
+.bluetooth-options label {
+  display: block;
+}
+
+ .color-checkbox {
+   position: relative;
+   padding-left: 40px;
+   cursor: pointer;
+ }
+
+ .bluetooth-checkbox {
+   position: relative;
+   padding-left: 40px;
+   cursor: pointer;
+ }
+
+.color-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #dbdbdb;
+}
+
+.color-checkbox input[type="checkbox"]:hover + .checkbox-indicator:hover {
+  background-color: #cecece;
+}
+
+.color-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  background-color: #c4c4c4;
+}
+
+.color-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.color-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+}
+
+.color-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  top: 13px;
+  left: 5px;
+  width: 6px;
+  transform: rotate(52deg);
+}
+
+.color-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  top: 12px;
+  left: 8px;
+  width: 10px;
+  transform: rotate(-39deg);
+}
+
+.bluetooth-checkbox input[type="radio"] + .checkbox-indicator {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #c6c6c6;
+  border-radius: 50%;
+}
+
+.bluetooth-checkbox input[type="radio"]:hover + .checkbox-indicator:hover {
+  border-color:#bebebe;
+}
+
+.bluetooth-checkbox input[type="radio"]:checked + .checkbox-indicator {
+  border-color:#c7c7c7;
+}
+
+.bluetooth-checkbox input[type="radio"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 5px;
+  height: 5px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.product-list {
+    font-size: 0;
+}
 
 .product-item{
     display: inline-block;
+    vertical-align: top;
     margin-right: 40px;
 }
 
@@ -921,21 +1088,43 @@ a {
     margin-right: 0;
 }
 
+.product-image {
+    margin-bottom: 35px;
+}
+
 .product-item-title {
+    margin: 0;
+    padding: 0;
     float: left;
     width: 260px;
+    height: 70px;
+    margin-bottom: 20px;
+    
+    font-weight: 800;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
+    line-height: normal;
 }
 
 .product-item-price {
     float: right;
     width: 80px;
+    
+    font-weight: 300;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: normal;
 }
 
 .paginator {
     background-color: #ebebeb;
     color: #000000;
     padding: 25px 30px;
+    
+    font-weight: 800;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .paginator .prev{
@@ -947,14 +1136,23 @@ a {
 }
 
 .paginator .list {
-    float: left;
     margin: 0 auto;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
+    width: 440px;
+    text-align: center;
+    font-size: 0;
 }
 
 .paginator li {
     display: inline-block;
+    font-size: 16px;
+    opacity: 0.3;
+    margin-right: 30px;
+}
+
+.paginator .active {
+    opacity: 1;
 }
 
 .page-footer {
@@ -1132,6 +1330,7 @@ a {
     margin: 0;
     padding: 0;
     font-size: 0;
+    margin-bottom: 50px;
 }
 
 .breadcrumbs-nav li {
