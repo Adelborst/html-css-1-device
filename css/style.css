@@ -34,6 +34,54 @@
     font-style: normal;
 }
 
+.product-image {
+  position: relative;
+  width:360px;
+  height:380px;
+}
+
+.item-hover {
+  display: none;
+  position: absolute;
+  background-color: rgba(238,238,238, 0.7);
+  top: 0;
+  left: 0;
+  width:360px;
+  height:204px;
+  padding-top: 167px;
+}
+
+.item-hover .add-basket {
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.item-hover .add-compare {
+  font-size: 14px;
+  color: #b0b0b0;
+  color: rgba(0, 0, 0, 0.5);
+  outline: none;
+  border: none;
+  background-color: transparent;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.item-hover .add-compare:hover {
+  color: black;
+}
+
+.item-hover .add-compare:active {
+  color: #e1e1e1;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.product-image:hover > .item-hover {
+  display: block;
+}
+
 .btn {
     box-sizing: border-box;
     position: relative;
@@ -150,7 +198,7 @@ h1, h2 {
     position: absolute;
     background-color: #ffe393;
     left: 0;
-    top: 170px;
+    top: 130px;
     width: 100%;
     min-height: 130px;
     margin: 0;
