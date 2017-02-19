@@ -159,8 +159,11 @@ h1, h2 {
 
     display: none;
 }
-
-nav:hover + .catalog-menu {
+.nav-bottom .nav-left {
+    width: 260px;
+}
+.nav-bottom .nav-left:hover + .catalog-menu,
+.nav-bottom .nav-left:active + .catalog-menu {
     display: block;
 }
 
