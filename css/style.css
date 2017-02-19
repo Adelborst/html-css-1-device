@@ -82,6 +82,10 @@
   display: block;
 }
 
+.product-slogan::before {
+
+}
+
 .btn {
     box-sizing: border-box;
     position: relative;
@@ -484,6 +488,10 @@ a {
     padding-right: 60px;
 }
 
+.product-right > input[type="radio"] {
+  display: none;
+}
+
 .product-right {
     float: right;
     width: 500px;
@@ -498,6 +506,48 @@ a {
     line-height: normal;
     margin-bottom: 20px;
     color: #000000;
+    position: relative;
+}
+
+.product-slogan::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    left: 0;
+    top: -40px;
+    background-image: url("../img/line.png");
+}
+
+.product-slogan::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 166px;
+    height: 131px;
+    left: 330px;
+    top: -80px;
+    background-image: url("../img/01.png");
+}
+
+.product-slider {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    font-size: 0;
+}
+
+.product-slider li {
+    display: inline-block;
+    margin-right: 23px;
+}
+
+.product-slider li:last-child {
+    margin-right: 0;
 }
 
 .product-description {
@@ -602,9 +652,32 @@ a {
     background-color: #ffc600;
 }
 
-.product-categories a:active .category-image{
+.product-categories a:active .category-title{
     opacity: 0.3;
-    background-color: rgba(255, 198, 0, 1);
+}
+
+.product-categories a:active .category-image-1{
+    background-image: url("../img/popular-1-hover.png");
+}
+
+.product-categories a:active .category-image-2{
+    background-image: url("../img/popular-2-hover.png");
+}
+
+.product-categories a:active .category-image-3{
+    background-image: url("../img/popular-3-hover.png");
+}
+
+.product-categories a:active .category-image-4{
+    background-image: url("../img/popular-4-hover.png");
+}
+
+.product-categories a:active .category-image-5{
+    background-image: url("../img/popular-5-hover.png");
+}
+
+.product-categories a:active .category-image-6{
+    background-image: url("../img/popular-6-hover.png");
 }
 
 .index-jumbotron {
