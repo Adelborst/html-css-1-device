@@ -957,15 +957,30 @@ a {
 
 .catalog-left {
     float: left;
-    width: 330px;
+    width: 32.5%;
     box-sizing: border-box;
 }
 
 .catalog-right {
-    float: right;
-    width: 830px;
-    padding-left: 70px;
+    float: left;
+    width: 67.5%;
     box-sizing: border-box;
+}
+
+.catalog-left-right {
+    float: right;
+    width: 200px;
+    padding-right: 70px;
+}
+
+.catalog-right-left {
+    float: left;
+    width: 760px;
+    padding-left: 70px;
+}
+
+.catalog-body .catalog-left {
+    min-height: 1225px;
 }
 
 .catalog-sort-options {
