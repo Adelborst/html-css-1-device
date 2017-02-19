@@ -1037,6 +1037,11 @@ a {
     position: absolute;
 }
 
+.sort:hover {
+    opacity: 0.6;
+}
+
+.sort:active,
 .sort.active {
     opacity: 1;
 }
@@ -1281,7 +1286,6 @@ a {
 .paginator {
     background-color: #ebebeb;
     color: #000000;
-    padding: 25px 30px;
     
     font-weight: 800;
     font-family: "Gilroy", "Arial", sans-serif;
@@ -1305,17 +1309,43 @@ a {
     width: 440px;
     text-align: center;
     font-size: 0;
+    padding-top: 20px;
 }
 
 .paginator li {
     display: inline-block;
     font-size: 16px;
-    opacity: 0.3;
+    /*opacity: 0.3;*/
     margin-right: 30px;
 }
 
-.paginator .active {
+.paginator .list a {
+    opacity: 0.3;
+}
+
+.paginator .list a:hover {
+    opacity: 0.6;
+}
+
+.paginator .list a:active,
+.paginator .list .active a {
     opacity: 1;
+}
+
+.paginator a.prev,
+.paginator a.next{
+    display: inline-block;
+    padding: 20px 36px;    
+}
+
+.paginator a.prev:hover,
+.paginator a.next:hover{   
+    background-color: #d9d9d9;
+}
+
+.paginator a.prev:active,
+.paginator a.next:active{   
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .page-footer {
