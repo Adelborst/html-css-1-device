@@ -575,6 +575,7 @@ a {
 
 .product-slider li {
     display: inline-block;
+    vertical-align: top;
     margin-right: 23px;
 }
 
@@ -636,6 +637,7 @@ a {
 
 .product-features li {
     display: inline-block;
+    vertical-align: top;
     margin-right: 80px;
 }
 
@@ -995,6 +997,7 @@ a {
 
 .catalog-sort-options li {
     display: inline-block;
+    vertical-align: top;
     margin-right: 30px;
 }
 
@@ -1056,6 +1059,7 @@ a {
 
 .sort {
     display: inline-block;
+    vertical-align: top;
     width: 17px;
     height: 9px;
     background-color: transparent;
@@ -1342,6 +1346,7 @@ a {
 
 .paginator li {
     display: inline-block;
+    vertical-align: top;
     font-size: 16px;
     /*opacity: 0.3;*/
     margin-right: 30px;
@@ -1363,6 +1368,7 @@ a {
 .paginator a.prev,
 .paginator a.next{
     display: inline-block;
+    vertical-align: top;
     padding: 20px 36px;    
 }
 
@@ -1568,6 +1574,7 @@ a {
 
 .html-academy-logo {
     display: inline-block;
+    vertical-align: top;
     width: 27px;
     height: 34px;        
     background-repeat: no-repeat;
@@ -1629,6 +1636,7 @@ a {
 
 .breadcrumbs-nav li {
     display: inline-block;
+    vertical-align: top;
     font-size: 14px;
     line-height: 36px;
     color: rgba(0, 0, 0, 0.3);
