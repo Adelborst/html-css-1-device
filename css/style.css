@@ -801,15 +801,19 @@ a {
     margin-bottom: 130px;
 }
 
-.services {
+.services,
+.services-left,
+.services-right {
     min-height: 290px;
+}
+
+.services {    
     background-color: #e6e6e6;
 }
 
 .services-left {
     float: left;
     width: 300px;
-    min-height: 290px;
     position: relative;
 }
 
@@ -1142,7 +1146,8 @@ a {
 .catalog-header,
 .catalog-header-center,
 .catalog-header-left,
-.catalog-header-right {
+.catalog-header-right,
+.catalog-sort-order {
     min-height: 70px;
 }
 
