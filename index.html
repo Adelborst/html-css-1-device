@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.min.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<link rel="stylesheet" href="css/styles.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
                                 <a href="#" class="nav-guarantee">Гарантия</a>
                             </div>
                             <div class="nav-contacts">
-                                <a href="#" class="nav-contacts">Контакты</a>
+                                <a href="#" class="nav-contacts-inner">Контакты</a>
                             </div>
                         </div>
                         <div class="nav-left nav-catalog">
@@ -69,79 +69,128 @@
     <main class="page-body">
         <section class="index-jumbotron">
             <div class="container">
-                <div class="product-container narrower">
-                    <article class="product clearfix">
-                        <div class="product-left">
-                            <img class="product-slider-image" src="img/slider-1.png" alt="" width="384" height="484">
-                        </div>
-                        <div class="product-right">
-                            <h2 class="product-slogan">Делай селфи,<br>как Бен Стиллер!</h2>
-                            <p class="product-description">
-                                Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров
-                                длиной и весом всего 5 килограмм.
-                            </p>
-                            <a href="#" class="product-details btn">Подробнее</a>
-                            <ul class="product-slider">
-                                <li class="active"><label><input type="radio" name="product" checked></label></li>
-                                <li><label><input type="radio" name="product"></label></li>
-                                <li><label><input type="radio" name="product"></label></li>
-                            </ul>
-                            <ul class="product-features">
-                                <li class="product-feature">
-                                    <span class="value">8,5 м</span>
-                                    <span class="name">Длина палки</span>
-                                </li>
-                                <li class="product-feature">
-                                    <span class="value">5 кг</span>
-                                    <span class="name">Вес палки</span>
-                                </li>
-                                <li class="product-feature">
-                                    <span class="value">Карбон</span>
-                                    <span class="name">Материал</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
+                <div class="product-container clearfix">
+                    <div class="product-left">
+                        <ul class="product-slider-images">
+                            <li>
+                                <img class="product-slider-image product-slider-image-1" src="img/slider-1.png" alt="" width="384" height="484"></li>
+                            <li>
+                                <img class="product-slider-image product-slider-image-2" src="img/slider-2.png" alt="" width="345" height="485"></li>
+                            <li class="active">
+                                <img class="product-slider-image product-slider-image-3" src="img/slider-3.png" alt="" width="526" height="334"></li>
+                        </ul>
+
+                    </div>
+                    <div class="product-right">
+                        <ul class="product-slider-list">
+                            <li>
+                                <div class="product-right-details product-details-1">
+                                    <h2 class="product-slogan">Делай селфи,<br>как Бен Стиллер!</h2>
+                                    <p class="product-description">
+                                        Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!)
+                                        метров длиной и весом всего 5 килограмм.
+                                    </p>
+                                    <a href="#" class="product-more btn">Подробнее</a>
+                                    <ul class="product-features">
+                                        <li class="product-feature">
+                                            <span class="value">8,5 м</span>
+                                            <span class="name">Длина палки</span>
+                                        </li>
+                                        <li class="product-feature">
+                                            <span class="value">5 кг</span>
+                                            <span class="name">Вес палки</span>
+                                        </li>
+                                        <li class="product-feature">
+                                            <span class="value">Карбон</span>
+                                            <span class="name">Материал</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-right-details product-details-2">
+                                    <h2 class="product-slogan">Худеем<br>правильно!</h2>
+                                    <p class="product-description">
+                                        Мотивирующие фитнесс-браслеты помогут найти в себе силы<br> не пропускать занятия
+                                        и соблюдать диету.
+                                    </p>
+                                    <a href="#" class="product-more btn">Подробнее</a>
+                                    <ul class="product-features">
+                                        <li class="product-feature">
+                                            <span class="value">48 часов</span>
+                                            <span class="name">Без подзарядки</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="active">
+                                <div class="product-right-details product-details-3">
+                                    <h2 class="product-slogan">Порхает&nbsp;как&nbsp;бабочка,<br>жалит как пчела!</h2>
+                                    <p class="product-description">
+                                        Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным
+                                        под стандартную камеру.
+                                    </p>
+                                    <a href="#" class="product-more btn">Подробнее</a>
+                                    <ul class="product-features">
+                                        <li class="product-feature">
+                                            <span class="value">800 м</span>
+                                            <span class="name">Дальность полета</span>
+                                        </li>
+                                        <li class="product-feature">
+                                            <span class="value">50 м</span>
+                                            <span class="name">Радиус поражения</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!--<ul class="product-slider">
+                                <li class="active"><label><input type="radio" name="product" checked></label></li>
+                                <li><label><input type="radio" name="product"></label></li>
+                                <li><label><input type="radio" name="product"></label></li>
+                            </ul>-->
         <section class="index-product-categories">
             <div class="container">
                 <ul class="product-categories">
                     <li>
                         <a href="#">
                             <div class="category-image category-image-1"></div>
-                            <b class="category-title">Виртуальная реальность</b>
+                            <p class="category-title">Виртуальная<br>реальность</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <div class="category-image category-image-2"></div>
-                            <b class="category-title">Моноподы для селфи</b>
+                            <p class="category-title">Моноподы для&nbsp;селфи</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <div class="category-image category-image-3"></div>
-                            <b class="category-title">Экшн-камеры</b>
+                            <p class="category-title">Экшн-камеры</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <div class="category-image category-image-4"></div>
-                            <b class="category-title">Фитнесс браслеты</b>
+                            <p class="category-title">Фитнесс браслеты</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <div class="category-image category-image-5"></div>
-                            <b class="category-title">Умные часы</b>
+                            <p class="category-title">Умные часы</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <div class="category-image category-image-6"></div>
-                            <b class="category-title">Квадрокоптеры</b>
+                            <p class="category-title">Квадрокоптеры</p>
                         </a>
                     </li>
                 </ul>
@@ -149,28 +198,32 @@
         </section>
         <section class="services">
             <div class="container clearfix">
-                <ul class="services-master">
-                    <li class="service delivery active"><label class="btn"><input type="radio" name="service" checked>Доставка</label></li>
-                    <li class="service warranty"><label class="btn"><input type="radio" name="service">Гарантия</label></li>
-                    <li class="service credit"><label class="btn"><input type="radio" name="service">Кредит</label></li>
-                </ul>
-                <ul class="services-detail">
-                    <li class="service delivery active">
-                        <h2 class="service-title">Доставка</h2>
-                        <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                            заработаем, поднимая его на ваш этаж.</p>
-                    </li>
-                    <li class="service warranty">
-                        <h2 class="service-title">Гарантия</h2>
-                        <p class="service-description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                            Товар, не дом, конечно же.</p>
-                    </li>
-                    <li class="service credit">
-                        <h2 class="service-title">Кредит</h2>
-                        <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
-                            кредита. Выгодные для нашего банка, разумеется.</p>
-                    </li>
-                </ul>
+                <div class="services-left">
+                    <ul class="services-master">
+                        <li class="service-name delivery "><label class="btn"><input type="radio" name="service" checked>Доставка</label></li>
+                        <li class="service-name warranty "><label class="btn"><input type="radio" name="service">Гарантия</label></li>
+                        <li class="service-name credit active"><label class="btn"><input type="radio" name="service">Кредит</label></li>
+                    </ul>
+                </div>
+                <div class="services-right">
+                    <ul class="services-details">
+                        <li class="service delivery">
+                            <h2 class="service-title">Доставка</h2>
+                            <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                                заработаем, поднимая его на ваш этаж.</p>
+                        </li>
+                        <li class="service warranty ">
+                            <h2 class="service-title">Гарантия</h2>
+                            <p class="service-description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
+                                новый.<br>Товар, не дом, конечно же.</p>
+                        </li>
+                        <li class="service credit active">
+                            <h2 class="service-title">Кредит</h2>
+                            <p class="service-description">Залезть в долговую яму стало проще! Кредитные<br>консультанты подберут для вас наиболее выгодные<br>условия
+                                кредита. Выгодные для нашего банка, разумеется.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="index-about-us">
@@ -205,7 +258,7 @@
                     </div>
                     <div class="index-about-us-right">
                         <h3 class="about-us-title">Контакты</h3>
-                        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+                        <p class="about-us-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
                             Всякое бывает.</p>
                         <div class="map">
                             <img src="img/map.jpg" alt="Карта" width="560" height="222">
@@ -232,19 +285,17 @@
                         <li class="contacts"><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
-                <div class="footer-social">
-                    <ul class="social-list">
-                        <li>
-                            <a href="#" class="social-btn social-btn-fb">Facebook</a>
-                        </li>
-                        <li>
-                            <a href="#" class="social-btn social-btn-in">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="#" class="social-btn social-btn-tw">Twitter</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="social-list">
+                    <li>
+                        <a href="#" class="social-btn social-btn-fb">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-btn social-btn-in">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-btn social-btn-tw">Twitter</a>
+                    </li>
+                </ul>
             </div>
             <div class="footer-right">
                 <ul class="child-nav">
