@@ -1585,6 +1585,18 @@ a {
     background-image: url("../img/device-yellow-line.png");
 }
 
+.new .product-image::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: 30px;
+    right: 25px;
+    background-image: url("../img/new.png");
+    opacity: 0.1;
+}
+
 .footer-logo a {
     color: #ffe27f;
     text-transform: uppercase;
