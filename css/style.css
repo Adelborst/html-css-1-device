@@ -1013,50 +1013,20 @@ a:active .category-image-6 {
 
 .logotypes .logo {
     display: block;
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: 0 0;
     opacity: 0.2;
-    background: url("../img/sprite-logotypes.png") no-repeat top left;
+    -webkit-filter: saturate(0);
+            filter: saturate(0);
     width: 260px;
     height: 100px;
 }
 
 .logotypes .logo:hover {
-    opacity: 1;
+    opacity: 1;   
+    -webkit-filter: saturate(1);
+            filter: saturate(1);
 }
 
-.logotypes .logo-1 {
-    background-position: 0 0; 
-}
 
-.logotypes .logo-1:hover {
-    background-position: 0 -110px; 
-}
-
-.logotypes .logo-2 {
-    background-position: 0 -220px; 
-}
-
-.logotypes .logo-2:hover {
-    background-position: 0 -330px; 
-}
-
-.logotypes .logo-3 {
-    background-position: 0 -440px; 
-}
-
-.logotypes .logo-3:hover {
-    background-position: 0 -550px; 
-}
-
-.logotypes .logo-4 {
-    background-position: 0 -660px; 
-}
-
-.logotypes .logo-4:hover {
-    background-position: 0 -770px; 
-}
 
 .index-about-us-left {
     float: left;
