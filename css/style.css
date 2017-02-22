@@ -2014,15 +2014,6 @@ a:active .category-image-6 {
     margin-left: -480px;
 }
 
-.modal-content-show {
-    display: block;
-    animation: bounce 0.3s;
-}
-
-.modal-error {
-    animation: shake 0.2s;
-}
-
 .modal-content-close {
     position: absolute;
     top: 23px;
@@ -2030,7 +2021,7 @@ a:active .category-image-6 {
     width: 54px;
     height: 54px;
     font-size: 0;
-    background-color: #f7e296;
+    background-color: rgba(255, 198, 0, 0.5);
     border: 0;
     outline: 0;
     border-radius: 50%;
@@ -2048,6 +2039,15 @@ a:active .category-image-6 {
     background-color: #fff;
 }
 
+.modal-content-close:hover {
+    background-color: rgba(255, 198, 0, 1);
+}
+
+.modal-content-close:active::before,
+.modal-content-close:active::after {
+    background-color: #ffd74d;
+}
+
 .modal-content-close::before {
     transform: rotate(45deg);
 }
@@ -2062,18 +2062,32 @@ a:active .category-image-6 {
     line-height: 18px;
     font-weight: 800;
     margin-bottom: 10px;
+    color: #000000;
 }
 
-.write-us-form input[type="text"],
-.write-us-form input[type="email"] {
+.write-us-form input {
     background-color: #f2f2f2;
-    color: #b8b8b8;
+    color: #000000;
     padding: 14px;
-    border: 0;
+    border: 2px solid #f2f2f2;
     outline: 0;
     text-align: left;
     font-size: 14px;
     line-height: 14px;
+    box-sizing: border-box;
+}
+
+.write-us-form input:hover {
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+}
+
+.write-us-form input:focus {
+    background-color: #ffffff;
+}
+
+.write-us-form input.error {
+    background-color: #ffdada;
 }
 
 .form1 input[type="text"] {
@@ -2087,11 +2101,11 @@ a:active .category-image-6 {
 
 .form1 input[type="text"],
 .form2 input[type="email"] {
-    width: 332px;
+    width: 360px;
 }
 
 .form3 input[type="text"] {
-    width: 732px;
+    width: 760px;
     padding: 14px 14px 124px 14px;
 }
 
