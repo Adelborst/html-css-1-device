@@ -36,7 +36,7 @@
 
 .product-image {
     position: relative;
-        margin-bottom: 35px;
+    margin-bottom: 35px;
     width:360px;
     height:380px;
 }
@@ -113,7 +113,8 @@
     border-bottom: 8px solid #f0c52e;
     top: 50%;
     left:0;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .btn:hover {
@@ -191,12 +192,11 @@ h1, h2 {
 .nav-catalog::after {
     position: absolute;
     content: "";
-    display: block;
-    width: 16px;
-    height: 16px;
     top: 2px;
     right: 14px;
-    background: transparent url("../img/plus.png") no-repeat 0 0;
+    background: url("../img/sprite-icons.png") no-repeat 0 -293px;
+    width: 16px;
+    height: 16px;
 }
 
 .catalog-menu {
@@ -324,12 +324,11 @@ a {
 .nav-user::before {
     position: absolute;
     content: "";
-    display: block;
-    width: 13px;
-    height: 12px;
     top: 12px;
     left: 0;
-    background: transparent url("../img/user.png") no-repeat 0 0;
+    background: url("../img/sprite-icons.png") no-repeat 0 -227px;
+    width: 13px;
+    height: 12px;
 }
 
 .nav-user:hover::before {
@@ -352,12 +351,11 @@ a {
 .nav-compare::before {
     position: absolute;
     content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
     top: 13px;
     left: 0;
-    background: transparent url("../img/compare.png") no-repeat 0 0;
+    background: url("../img/sprite-icons.png") no-repeat 0 -86px;
+    width: 10px;
+    height: 10px;
 }
 
 .nav-compare:hover::before {
@@ -380,12 +378,11 @@ a {
 .nav-cart::before {
     position: absolute;
     content: "";
-    display: block;
-    width: 12px;
-    height: 12px;
     top: 12px;
     left: 2px;
-    background: transparent url("../img/cart.png") no-repeat 0 0;
+    background: url("../img/sprite-icons.png") no-repeat 0 -20px;
+    width: 12px;
+    height: 12px;
 }
 
 .nav-cart:hover::before {
@@ -405,9 +402,9 @@ a {
     position: absolute;
     left: 3px;
     top: 15px;
+    background: url("../img/sprite-icons.png") no-repeat 0 -163px;
     width: 16px;
     height: 16px;
-    background: transparent url("../img/search.png") no-repeat 0 0;
     z-index: 1;
 }
 
@@ -586,14 +583,13 @@ a {
 }
 
 .product-slogan::before {
-    display: block;
     content: "";
     position: absolute;
-    width: 100px;
-    height: 7px;
     left: 5px;
     top: -40px;
-    background-image: url("../img/line.png");
+    background: url("../img/sprite-lines.png") no-repeat 0 -34px;
+    width: 100px;
+    height: 7px;
 }
 
 .product-details-1::before {
@@ -664,7 +660,7 @@ a {
     margin-bottom: 65px;
 }
 
-.category-image {
+.category-image-container {
     margin-bottom: 35px;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -673,31 +669,61 @@ a {
     background-color: #ffe27f;
     width: 160px;
     height: 160px;
+    position: relative;
 }
 
-.category-image-1 {
-    background-image: url("../img/popular-1.png");
+.category-image {
+    position: absolute;
+    content: "";
+    background: url("../img/sprite-popular.png") no-repeat top left;
+    width: 56px;
+    height: 55px;
 }
 
-.category-image-2 {
-    background-image: url("../img/popular-2.png");
-    background-position: 50% 100%;
+.category-image-1 {        
+    background-position: 0 0;
+    width: 97px;
+    left: 30px;
+    top: 50px;
 }
 
-.category-image-3 {
-    background-image: url("../img/popular-3.png");
+.category-image-2 {  
+    background-position: 0 -130px;
+    width: 86px;
+    height: 117px;     
+    left: 40px;
+    bottom: 0;
 }
 
-.category-image-4 {
-    background-image: url("../img/popular-4.png");
+.category-image-3 {  
+    background-position: 0 -384px;
+    width: 71px;
+    height: 87px; 
+    left: 50px;
+    top: 38px;
 }
 
-.category-image-5 {
-    background-image: url("../img/popular-5.png");
+.category-image-4 {  
+    background-position: 0 -578px;
+    width: 107px;
+    height: 65px; 
+    left: 30px;
+    top: 50px;
 }
 
-.category-image-6 {
-    background-image: url("../img/popular-6.png");
+.category-image-5 {  
+    background-position: 0 -728px;
+    height: 98px; 
+    left: 55px;
+    top: 32px;
+}
+
+.category-image-6 {  
+    background-position: 0 -944px;
+    width: 132px;
+    height: 69px; 
+    left: 10px;
+    top: 50px;
 }
 
 .product-features {
@@ -753,7 +779,7 @@ a {
     margin-right: 0;
 }
 
-a:hover .category-image {
+a:hover .category-image-container {
     background-color: #ffc600;
 }
 
@@ -762,27 +788,55 @@ a:active .category-title {
 }
 
 a:active .category-image-1 {
-    background-image: url("../img/popular-1-hover.png");
+    background: url("../img/sprite-popular.png") no-repeat top left;
+    width: 56px;
+    height: 55px;
+    background-position: 0 -65px;
+    width: 97px; 
 }
 
 a:active .category-image-2 {
-    background-image: url("../img/popular-2-hover.png");
+    background: url("../img/sprite-popular.png") no-repeat top left;
+    width: 56px;
+    height: 55px;
+    background-position: 0 -257px;
+    width: 86px;
+    height: 117px; 
 }
 
 a:active .category-image-3 {
-    background-image: url("../img/popular-3-hover.png");
+    background: url("../img/sprite-popular.png") no-repeat top left;
+    width: 56px;
+    height: 55px;
+    background-position: 0 -481px;
+    width: 71px;
+    height: 87px; 
 }
 
 a:active .category-image-4 {
-    background-image: url("../img/popular-4-hover.png");
+    background: url("../img/sprite-popular.png") no-repeat top left;
+    width: 56px;
+    height: 55px;
+    background-position: 0 -653px;
+    width: 107px;
+    height: 65px; 
 }
 
 a:active .category-image-5 {
-    background-image: url("../img/popular-5-hover.png");
+    background: url("../img/sprite-popular.png") no-repeat top left;
+    width: 56px;
+    height: 55px;
+    background-position: 0 -836px;
+    height: 98px; 
 }
 
 a:active .category-image-6 {
-    background-image: url("../img/popular-6-hover.png");
+    background: url("../img/sprite-popular.png") no-repeat top left;
+    width: 56px;
+    height: 55px;
+    background-position: 0 -1023px;
+    width: 132px;
+    height: 69px; 
 }
 
 .index-jumbotron {
@@ -801,6 +855,8 @@ a:active .category-image-6 {
 .index-product-categories {
     margin-bottom: 130px;
 }
+
+
 
 .services,
 .services-left,
@@ -881,17 +937,15 @@ a:active .category-image-6 {
 }
 
 .services-details .service::after {
-    display: "block";
+    background: url("../img/sprite-services.png") no-repeat top left;
     content: "";
-    background-repeat: no-repeat;
-    background-position: 0 0;
     position: absolute;
     top: 0;
     right: 0;
 }
 
 .services-details .service.delivery::after {
-    background-image: url("../img/delivery.png");
+    background-position: 0 -198px;
     width: 136px;
     height: 164px;
     right: 7px;
@@ -899,7 +953,7 @@ a:active .category-image-6 {
 }
 
 .services-details .service.warranty::after {
-    background-image: url("../img/warranty.png");
+    background-position: 0 -372px;
     width: 171px;
     height: 195px;
     right: -15px;
@@ -907,7 +961,7 @@ a:active .category-image-6 {
 }
 
 .services-details .service.credit::after {
-    background-image: url("../img/credit.png");
+    background-position: 0 0;
     width: 156px;
     height: 188px;
     right: 10px;
@@ -959,12 +1013,13 @@ a:active .category-image-6 {
 
 .logotypes .logo {
     display: block;
-    width: 260px;
-    height: 100px;
     background-color: white;
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.2;
+    background: url("../img/sprite-logotypes.png") no-repeat top left;
+    width: 260px;
+    height: 100px;
 }
 
 .logotypes .logo:hover {
@@ -972,35 +1027,35 @@ a:active .category-image-6 {
 }
 
 .logotypes .logo-1 {
-    background-image: url("../img/logo-1.jpg");
+    background-position: 0 0; 
 }
 
 .logotypes .logo-1:hover {
-    background-image: url("../img/logo-1-hover.jpg");
+    background-position: 0 -110px; 
 }
 
 .logotypes .logo-2 {
-    background-image: url("../img/logo-2.jpg");
+    background-position: 0 -220px; 
 }
 
 .logotypes .logo-2:hover {
-    background-image: url("../img/logo-2-hover.jpg");
+    background-position: 0 -330px; 
 }
 
 .logotypes .logo-3 {
-    background-image: url("../img/logo-3.jpg");
+    background-position: 0 -440px; 
 }
 
 .logotypes .logo-3:hover {
-    background-image: url("../img/logo-3-hover.jpg");
+    background-position: 0 -550px; 
 }
 
 .logotypes .logo-4 {
-    background-image: url("../img/logo-4.jpg");
+    background-position: 0 -660px; 
 }
 
 .logotypes .logo-4:hover {
-    background-image: url("../img/logo-4-hover.jpg");
+    background-position: 0 -770px; 
 }
 
 .index-about-us-left {
@@ -1024,14 +1079,13 @@ a:active .category-image-6 {
 }
 
 .about-us-title::before {
-    display: block;
+    position: absolute;
     content: "";
-    width: 80px;
-    height: 7px;
     top: -50px;
     left: 0;
-    background-image: url("../img/about-us-line.png");
-    position: absolute;
+    background: url("../img/sprite-lines.png") no-repeat 0 0;
+    width: 80px;
+    height: 7px;
 }
 
 .about-us-text {
@@ -1064,6 +1118,7 @@ a:active .category-image-6 {
 .index-about-us .map {
     margin-top: 40px;
     margin-bottom: 55px;
+    cursor: pointer;
 }
 
 .page-title {
@@ -1122,7 +1177,8 @@ a:active .category-image-6 {
 .bluetooth-options {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    color: #000000;
 }
 
 .catalog-sort-options li:last-child {
@@ -1208,17 +1264,27 @@ a:active .category-image-6 {
     width: 60px;
     font-size: 0;
     line-height: 70px;
-    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    -ms-flex-pack: distribute;
+    justify-content: space-between;
 }
 
 .sort {
     width: 17px;
     height: 9px;
     background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background: url("../img/sprite-icons.png") no-repeat top left;
+    width: 10px;
+    height: 12px;
     opacity: 0.3;
-    position: absolute;
 }
 
 .sort:hover {
@@ -1231,13 +1297,17 @@ a:active .category-image-6 {
 }
 
 .sort-asc {
-    background-image: url("../img/sort-up.png");
+    background-position: 0 -208px;
+    width: 17px;
+    height: 9px;
     left: 0;
     top: 30px;
 }
 
 .sort-desc {
-    background-image: url("../img/sort-down.png");
+    background-position: 0 -189px;
+    width: 17px;
+    height: 9px;
     right: 0;
     top: 30px;
 }
@@ -1336,7 +1406,8 @@ a:active .category-image-6 {
 }
 .toggle-max span {
     right: 50%;
-    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
 }
 
 .filter-form-group label {
@@ -1394,14 +1465,16 @@ a:active .category-image-6 {
     top: 13px;
     left: 5px;
     width: 6px;
-    transform: rotate(52deg);
+    -webkit-transform: rotate(52deg);
+            transform: rotate(52deg);
 }
 
 .color-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
     top: 12px;
     left: 8px;
     width: 10px;
-    transform: rotate(-39deg);
+    -webkit-transform: rotate(-39deg);
+            transform: rotate(-39deg);
 }
 
 .bluetooth-checkbox input[type="radio"] + .checkbox-indicator {
@@ -1582,24 +1655,22 @@ a:active .category-image-6 {
 }
 .footer-logo::after {
     position: absolute;
-    display: block;
     content: "";
-    width: 80px;
-    height: 7px;
     bottom: -130px;
     left: 0;
-    background-image: url("../img/device-yellow-line.png");
+    background: url("../img/sprite-lines.png") no-repeat 0 -17px;
+    width: 80px;
+    height: 7px;
 }
 
 .new .product-image::before {
     position: absolute;
-    display: block;
     content: "";
-    width: 60px;
-    height: 60px;
     top: 30px;
     right: 25px;
-    background-image: url("../img/new.png");
+    background: url("../img/sprite-icons.png") no-repeat 0 -319px;
+    width: 60px;
+    height: 60px;
     opacity: 0.1;
 }
 
@@ -1698,24 +1769,26 @@ a:active .category-image-6 {
 
 .social-btn {
     display: block;
-    width: 39px;
-    height: 39px;
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background: url("../img/sprite-social.png") no-repeat top left;
+    width: 27px;
+    height: 38px;
     margin-right: 10px;
     opacity: 0.3;
 }
 
 .social-btn-fb {
-    background-image: url("../img/facebook.png");
+    background-position: 0 0;
+    width: 39px;
 }
 
 .social-btn-in {
-    background-image: url("../img/insta.png");
+    background-position: 0 -136px;
+    width: 39px;
 }
 
 .social-btn-tw {
-    background-image: url("../img/twitter.png");
+    background-position: 0 -184px;
+    width: 38px;
 }
 
 .social-btn:hover {
@@ -1765,15 +1838,16 @@ a:active .category-image-6 {
 .html-academy-logo {
     display: inline-block;
     vertical-align: top;
+    background: url("../img/sprite-social.png") no-repeat top left;
     width: 27px;
-    height: 34px;        
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-image: url("../img/htmlacademy.png");
+    height: 38px;
+    background-position: 0 -48px;
+    height: 34px;
 }
 
 .html-academy-logo:hover {
-    background-image: url("../img/htmlacademy-hover.png");
+    background-position: 0 -92px;
+    height: 34px;
 }
 
 .html-academy-logo:active {
@@ -1783,21 +1857,20 @@ a:active .category-image-6 {
 .child-nav a::before {
     position: absolute;
     content: "";
-    display: block;
-    width: 13px;
-    height: 12px;
     top: 5px;
     left: 0;
-    background-repeat: no-repeat;
-    background-position: 0 0;
 }
 
 .child-nav .account::before {
-    background-image: url("../img/user-yellow.png");
+    background: url("../img/sprite-icons.png") no-repeat 0 -249px; 
+    width: 13px;
+    height: 12px;
 }
 
 .child-nav .account:hover::before {
-    background-image: url("../img/user-yellow-hover.png");
+    background: url("../img/sprite-icons.png") no-repeat 0 -271px;
+    width: 13px;
+    height: 12px;
 }
 
 .child-nav .account:active::before {
@@ -1805,12 +1878,16 @@ a:active .category-image-6 {
 }
 
 .child-nav .compare::before {
-    background-image: url("../img/compare-yellow.png");
+    background: url("../img/sprite-icons.png") no-repeat 0 -106px;
+    width: 10px;
+    height: 10px;
     left: 5px;
 }
 
 .child-nav .compare:hover::before {
-    background-image: url("../img/compare-yellow-hover.png");
+    background: url("../img/sprite-icons.png") no-repeat  0 -126px;
+    width: 10px;
+    height: 10px;
 }
 
 .child-nav .compare:active::before {
@@ -1818,12 +1895,16 @@ a:active .category-image-6 {
 }
 
 .child-nav .cart::before {
-    background-image: url("../img/cart-yellow.png");
+    background: url("../img/sprite-icons.png") no-repeat 0 -42px;
+    width: 12px; 
+    height: 12px;
     left: 3px;
 }
 
 .child-nav .cart:hover::before {
-    background-image: url("../img/cart-yellow-hover.png");
+    background: url("../img/sprite-icons.png") no-repeat 0 -64px;
+    width: 12px;
+    height: 12px;
 }
 
 .child-nav .cart:active::before {
@@ -1851,12 +1932,11 @@ a:active .category-image-6 {
 .breadcrumbs-nav li::after {
     position: absolute;
     content: "";
-    display: block;
-    width: 4px;
-    height: 7px;
     top: 14px;
     right: -20px;
-    background: transparent url("../img/nav-arrow.png") no-repeat 0 0;
+    background: url("../img/sprite-icons.png") no-repeat 0 -146px;
+    width: 4px;
+    height: 7px;
 }
 
 .product-slider {    
@@ -1915,6 +1995,8 @@ a:active .category-image-6 {
 .breadcrumbs-nav a:active {
     opacity: 0.1;
 }
+
+
 
 .search-field::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.3);
@@ -2001,6 +2083,9 @@ a:active .category-image-6 {
     background-color: #fff;
 }
 
+.modal-content.active {
+    display: block;
+}
 
 .modal-content-map {
     display: none;
@@ -2012,6 +2097,10 @@ a:active .category-image-6 {
     width: 960px;
     height: 563px;
     margin-left: -480px;
+}
+
+.modal-content-map.active {
+    display: block;
 }
 
 .modal-content-close {
@@ -2049,11 +2138,13 @@ a:active .category-image-6 {
 }
 
 .modal-content-close::before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .modal-content-close::after {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 .modal-content p {

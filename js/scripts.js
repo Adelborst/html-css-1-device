@@ -1,7 +1,20 @@
-function sayHello() {
-    console.log("Hello world 1!");
-    console.log("Hello world 2!");
-    console.log("Hello world 3!");
+function showMapModal() {
+    var modal = document.getElementById('modal-content-map');
+    modal.classList.add("active");
 }
 
-sayHello();
+function hideMapModal() {
+    var modal = document.getElementById('modal-content-map');
+    modal.classList.remove("active");
+}
+
+function showFeedbackModal() {
+    event.preventDefault();
+    var modal = document.getElementById('modal-content');
+    modal.classList.add("active");
+}
+
+function hideFeedbackModal() {
+    var modal = document.getElementById('modal-content');
+    modal.classList.remove("active");
+}

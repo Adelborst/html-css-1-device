@@ -158,37 +158,49 @@
                 <ul class="product-categories">
                     <li>
                         <a href="#">
-                            <div class="category-image category-image-1"></div>
+                            <div class="category-image-container">
+                                <div class="category-image category-image-1"></div>
+                            </div>
                             <p class="category-title">Виртуальная<br>реальность</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="category-image category-image-2"></div>
+                            <div class="category-image-container">
+                                <div class="category-image category-image-2"></div>
+                            </div>
                             <p class="category-title">Моноподы для&nbsp;селфи</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="category-image category-image-3"></div>
+                            <div class="category-image-container">
+                                <div class="category-image category-image-3"></div>
+                            </div>
                             <p class="category-title">Экшн-камеры</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="category-image category-image-4"></div>
+                            <div class="category-image-container">
+                                <div class="category-image category-image-4"></div>
+                            </div>
                             <p class="category-title">Фитнесс браслеты</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="category-image category-image-5"></div>
+                            <div class="category-image-container">
+                                <div class="category-image category-image-5"></div>
+                            </div>
                             <p class="category-title">Умные часы</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="category-image category-image-6"></div>
+                            <div class="category-image-container">
+                                <div class="category-image category-image-6"></div>
+                            </div>
                             <p class="category-title">Квадрокоптеры</p>
                         </a>
                     </li>
@@ -201,7 +213,7 @@
                     <ul class="services-master">
                         <li class="service-name delivery active"><label class="btn"><input type="radio" name="service" checked>Доставка</label></li>
                         <li class="service-name warranty"><label class="btn"><input type="radio" name="service">Гарантия</label></li>
-                        <li class="service-name credit "><label class="btn"><input type="radio" name="service">Кредит</label></li>
+                        <li class="service-name credit"><label class="btn"><input type="radio" name="service">Кредит</label></li>
                     </ul>
                 </div>
                 <div class="services-right">
@@ -211,13 +223,13 @@
                             <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                                 заработаем, поднимая его на ваш этаж.</p>
                         </li>
-                        <li class="service warranty ">
+                        <li class="service warranty">
                             <h2 class="service-title">Гарантия</h2>
                             <p class="service-description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
                                 новый.
                                 <br>Товар, не дом, конечно же.</p>
                         </li>
-                        <li class="service credit ">
+                        <li class="service credit">
                             <h2 class="service-title">Кредит</h2>
                             <p class="service-description">Залезть в долговую яму стало проще! Кредитные<br>консультанты подберут для вас наиболее выгодные<br>условия
                                 кредита. Выгодные для нашего банка, разумеется.</p>
@@ -260,10 +272,10 @@
                         <h3 class="about-us-title">Контакты</h3>
                         <p class="about-us-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
                             Всякое бывает.</p>
-                        <div class="map">
+                        <div class="map" onclick="showMapModal();">
                             <img src="img/map.jpg" alt="Карта" width="560" height="222">
                         </div>
-                        <a href="form.html" class="btn">Напишите нам</a>
+                        <a class="btn" href="#" onclick="showFeedbackModal();">Напишите нам</a>
                     </div>
                 </div>
             </div>
@@ -310,8 +322,8 @@
             </div>
         </div>
     </footer>
-    <div class="modal-content">
-        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <div class="modal-content" id="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть" onclick="hideFeedbackModal();">Закрыть</button>
         <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form1">
                 <p>Ваше имя:</p>
@@ -328,8 +340,8 @@
             <button class="btn" type="submit">отправить</button>
         </form>
     </div>
-    <div class="modal-content-map">
-        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <div class="modal-content-map" id="modal-content-map">
+        <button class="modal-content-close" type="button" title="Закрыть" onclick="hideMapModal();">Закрыть</button>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877992!2d37.527429315730224!3d55.68703098053591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1473172563054"
             width="966" height="563" style="border:0" allowfullscreen>
             </iframe>
