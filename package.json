@@ -2,6 +2,9 @@
   "name": "html-css-1-device",
   "version": "1.0.0",
   "description": "Личный проект «Девайс» от HTML Academy",
+  "scripts": {
+    "deploy": "gh-pages -d . -s {*.html,css/**/*.css,js/**/*.js,fonts/**/*.{woff,woff2},img/**/*.{jpg,png}}"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/deilan-htmlacademy-projects/html-css-1-device.git"
